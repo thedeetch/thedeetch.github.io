@@ -29,13 +29,13 @@ Since Python treats all strings and ints as immutable, we'll throw our counter i
 
 {% gist 64f44c320c46e8324bfb for_mutable.py %}
 
-  n = [0]
-  f = open("my_huge_file.txt", "r")
-  for line in f:
-    n[0]+=1
-  f.close()
-  print(n)
+    n = [0]
+    f = open("my_huge_file.txt", "r")
+    for line in f:
+      n[0]+=1
+    f.close()
+    print(n)
    
-  # 1m36.63s
+    # 1m36.63s
 
 Bingo. Right on par with our Perl baseline. Good enough for me.
