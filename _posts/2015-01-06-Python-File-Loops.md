@@ -1,3 +1,6 @@
+---
+---
+
 Recently I was looking to improve the performance of a Python 2.5 script that compares two files line by line. What I found interesting was the huge performance improvements I saw with just a few tweaks. I've simplified the problem to just reading the file and updating a counter, to keep things simple.</p>
 Each of these script was ran against a 75 million line text file and the results were averaged over 3 runs. This was a quick and unscientific test, so no guarantees of accuracy.
 
