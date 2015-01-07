@@ -3,7 +3,8 @@ layout: post
 title: Python File Loops
 ---
 
-Recently I was looking to improve the performance of a Python 2.5 script that compares two files line by line. What I found interesting was the huge performance improvements I saw with just a few tweaks. I've simplified the problem to just reading the file and updating a counter, to keep things simple.</p>
+Recently I was looking to improve the performance of a Python 2.5 script that compares two files line by line. What I found interesting was the huge performance improvements I saw with just a few tweaks. I've simplified the problem to just reading the file and updating a counter, to keep things simple.
+
 Each of these script was ran against a 75 million line text file and the results were averaged over 3 runs. This was a quick and unscientific test, so no guarantees of accuracy.
 
 Caveat: I'm not an experienced Python or Perl developer. I can't guarantee any of this code is best practice or pretty :)
@@ -25,5 +26,16 @@ A 50% performance improvement is good, but not good enough. Still a bit off of t
 
 ##for line in file + mutable int
 Since Python treats all strings and ints as immutable, we'll throw our counter into a mutable list, which lets us reuse the same memory space when incrementing.
+
 {% gist 64f44c320c46e8324bfb for_mutable.py %}
+
+  n = [0]
+  f = open("my_huge_file.txt", "r")
+  for line in f:
+    n[0]+=1
+  f.close()
+  print(n)
+   
+  # 1m36.63s
+
 Bingo. Right on par with our Perl baseline. Good enough for me.
