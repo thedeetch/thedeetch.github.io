@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Python File Loops
 ---
 
 Recently I was looking to improve the performance of a Python 2.5 script that compares two files line by line. What I found interesting was the huge performance improvements I saw with just a few tweaks. I've simplified the problem to just reading the file and updating a counter, to keep things simple.</p>
