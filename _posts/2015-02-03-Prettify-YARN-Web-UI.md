@@ -5,7 +5,7 @@ title: Prettify YARN Web UI
 
 Working with Hadoop at my day job is exciting.  There is a lot of velocity in the ecosystem and constant improvement in the tools we use.
 
-[YARN](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html) is a workload manager we use for our Hadoop clusters.  It does it job and does it well.
+[YARN](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html) is a workload manager we use for our Hadoop clusters.  It does its job and does it well.
 
 I do have a bunch of beefs...
 
