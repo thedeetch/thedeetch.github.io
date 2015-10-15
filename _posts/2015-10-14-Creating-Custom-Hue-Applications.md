@@ -26,4 +26,4 @@ A couple odd things I haven't figured out yet:
 * The link to the new app gets placed under an "Other Apps" menu in the Hue toolbar
 * Some of the built-in app icons use FontAwesome icons instead of images.  Not sure how to set up a custom app to use those instead of images.
 
-The SDK docs do a good job explaining what's included with Hue by default - like the outdated Bootstrap 2.0 - but it give you everything you need to create your own app and make it look like it shipped with Hue.
+The SDK docs do a good job explaining what's included with Hue by default - like the outdated Bootstrap 2.0 - but it gives you everything you need to create your own app and make it look like it shipped with Hue.
